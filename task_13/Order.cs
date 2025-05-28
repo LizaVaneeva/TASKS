@@ -41,7 +41,7 @@ namespace DeliverySystem
             {
                 $"Товар: {ProductName} (Артикул: {Article})",
                 $"Заявка #{OrderNumber}. Курьер: {CourierSurname}",
-                $"Тип: {typeStr}. Доставка: {DeliveryDateTime:g}"
+                $"Тип: {typeStr}. Доставка: {DeliveryDateTime:dd.MM.yyyy HH:mm}"
             };
         }
     }

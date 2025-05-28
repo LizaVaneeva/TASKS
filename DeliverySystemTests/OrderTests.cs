@@ -42,5 +42,42 @@ namespace DeliverySystem.UnitTests
             Assert.AreEqual("Заявка #ORD-2023-002. Курьер: Петров", info[1]);
             StringAssert.Contains("Тип: обычный. Доставка: 20.07.2023 10:00", info[2]);
         }
+
+        [Test]
+        public void ExpressOrder_GetInfo_ReturnsCorrectStrings()
+        {
+            var order = new ExpressOrder(
+                "Срочный документ",
+                "DOC-001",
+                "Кузнецов",
+                "EXP-2023-001",
+                "25.07.2023 09:00",
+                1.5,
+                DeliveryUrgency.WithinThreeHours);
+
+            var info = order.GetInfo();
+
+            Assert.AreEqual(4, info.Length);
+
+            Assert.AreEqual("Тип: срочный (в течение трех часов), Коэфф: 1,5", info[2]);
+        }
+
+        [Test]
+        public void InsuredOrder_GetInfo_ReturnsInsuranceInfo()
+        {
+            var order = new InsuredOrder(
+                "Антиквариат",
+                "ANT-001",
+                "Орлов",
+                "INS-2023-001",
+                "30.07.2023 15:00",
+                OrderType.Regular,
+                "Страховая Компания",
+                50000m);
+
+            var info = order.GetInfo();
+
+            StringAssert.Contains("Страховка: Страховая Компания (50000 руб.)", info[2]);
+        }
     }
 }
