@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliverySystem", "DeliverySystem.csproj", "{DC174303-F027-43C5-B2E0-FDDDE7DEF85B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliverySystem.UnitTests", "..\DeliverySystemTests\DeliverySystem.UnitTests.csproj", "{DACF6809-288D-4CAD-BB04-E7B3DC465D25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC174303-F027-43C5-B2E0-FDDDE7DEF85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC174303-F027-43C5-B2E0-FDDDE7DEF85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC174303-F027-43C5-B2E0-FDDDE7DEF85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC174303-F027-43C5-B2E0-FDDDE7DEF85B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACF6809-288D-4CAD-BB04-E7B3DC465D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACF6809-288D-4CAD-BB04-E7B3DC465D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACF6809-288D-4CAD-BB04-E7B3DC465D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACF6809-288D-4CAD-BB04-E7B3DC465D25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD08B26A-3233-4C0B-928A-CF8B9FF7311F}
+	EndGlobalSection
+EndGlobal
