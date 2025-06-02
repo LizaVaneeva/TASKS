@@ -58,7 +58,6 @@ namespace DeliverySystem.UnitTests
             var info = order.GetInfo();
 
             Assert.AreEqual(4, info.Length);
-
             Assert.AreEqual("Тип: срочный (в течение трех часов), Коэфф: 1,5", info[2]);
         }
 
